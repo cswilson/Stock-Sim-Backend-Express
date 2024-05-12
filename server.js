@@ -4,9 +4,9 @@ const cors = require('cors');
 const TICKER_REQUEST_BASE = "https://query1.finance.yahoo.com/v7/finance/chart/";
 
 const app = express();
-app.use(cors({
-  origin: 'http://localhost:3000'
-}));
+// app.use(cors({
+//   origin: 'http://localhost:3000'
+// }));
 
 app.get('/stock/:stockname', async (req, res) => {
   const stock = req.params.stockname;
